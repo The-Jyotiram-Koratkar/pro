@@ -1,0 +1,59 @@
+First Assignment (150 marks) ... date pattern(50), time pattern (50), email pattern (50)
+
+Problem statement: Write a python script using regular expression for extracting the date, time and email address from a text.
+
+Date pattern should consider valid name of months, number of days (1 to 31), number of months (1 to 12) and different styles of writing date patterns.   
+
+    Correct date patterns:
+        24th April 1973
+        15 November 1989
+        October 2013
+        16/11/2016
+        16.11.2016
+        16-11-2016
+        2016-11-16,
+        9.9.1994
+	6.02.2006
+    
+    Incorrect date patterns:
+	02-29-2011  ---- (months should be between 1 to 12)
+	32-12-2011  ---- (day should be between 1 to 31)
+	01@11@2011  ---- (we don't use special symbols like @,#,$,%,^,&,*,*! for writing date pattern)
+	Cricket 2013 ---- (cricket is not a month name here)
+
+
+Time pattern should consider valid hours, minutes, seconds and different styles of writing patterns. 
+
+    Correct time patterns:
+        7 am
+	6 pm
+	04:30 pm
+	8:30 am
+	00:59 am
+	12:00 pm
+	12:30:45 pm
+	
+   Incorrect time patterns:
+	305 pm....... (hours should be between 1 to 12) 
+        41:30 pm ... (hours should be between 0 to 12)
+	04:70 am.... (minutes should be between 0 to 60)
+	04:30.70 am...(seconds should be between 0 to 60)
+	    
+
+Email pattern should consider which letters/special characters are used. 
+
+   Correct email patterns:
+        sachin@gmail.com
+   	sachin.1973@gmail.com
+   	sachin.r.t@yahoo.com
+    	Sachin.r.t.73@yahoo.com
+   	sachin_1973@yahoo.co.in
+   
+  Incorrect email patterns:
+	sachin@gmail
+	@sachin.com
+	sachin.at.yahoo.com
+	s#@%^%#$@#$@#.com
+	.sachin@gmail.com
+	sachin@-gmail.com
+	sachin@1973@yahoo.com
